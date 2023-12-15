@@ -12,54 +12,82 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form">
-      <label id="name-label"
-        >Name
-        <input id="name" type="text" placeholder="Enter your name" required />
-      </label>
-      <label id="email-label"
-        >Email
-        <input
-          id="email"
-          type="email"
-          placeholder="Enter your Email"
-          required
-        />
-      </label>
-      <label id="number-label"
-        >Age
-        <input id="number" type="number" min="2" max="5" placeholder="Age" />
-      </label>
-      <label>
-        Which option best describes your current role?
-        <select id="dropdown">
-          <option value="">Select Your role</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-        </select>
-      </label>
-      <legend>Would you recommend freeCodeCamp to a friend?</legend>
-      <label for="yes"
-        ><input type="radio" name="recommend" id="yes" value="yes" checked />
-        Yes</label
-      >
-      <label for="no"
-        ><input type="radio" name="recommend" id="no" value="no" /> No</label
-      >
-      <legend>What would you like to see improved?</legend>
-      <label
-        ><input
-          type="checkbox"
-          name="prefer"
-          value="front-end projects"
-        />Front-end Projects</label
-      >
-      <label
-        ><input
-          type="checkbox"
-          name="prefer"
-          value="back-end projects"
-        />Back-end Projects</label
-      >
+      <div class="">
+        <label id="name-label"
+          >Name
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+      </div>
+      <div class="">
+        <label id="email-label"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </label>
+      </div>
+      <div class="">
+        <label id="number-label"
+          >Age
+          <input id="number" type="number" min="2" max="5" placeholder="Age" />
+        </label>
+      </div>
+      <div class="">
+        <label>
+          Which option best describes your current role?
+          <select id="dropdown">
+            <option value="">Select Your role</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </label>
+      </div>
+      <div class="">
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="yes"
+          ><input
+            class="inline"
+            type="radio"
+            name="recommend"
+            id="yes"
+            value="yes"
+            checked
+          />
+          Yes</label
+        >
+        <label for="no"
+          ><input
+            class="inline"
+            type="radio"
+            name="recommend"
+            id="no"
+            value="no"
+          />
+          No</label
+        >
+      </div>
+      <div class="">
+        <legend>What would you like to see improved?</legend>
+        <label
+          ><input
+            class="inline"
+            type="checkbox"
+            name="prefer"
+            value="front-end projects"
+          />Front-end Projects</label
+        >
+        <label
+          ><input
+            class="inline"
+            type="checkbox"
+            name="prefer"
+            value="back-end projects"
+          />Back-end Projects</label
+        >
+      </div>
       <textarea placeholder="Enter Your Comment Here"> </textarea>
       <input type="submit" id="submit" value="Submit" />
     </form>
